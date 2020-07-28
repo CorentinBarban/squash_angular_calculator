@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md">
+    Op.1
+    <input type="number" class="form-control" placeholder="Saisir un nombre" id="op1" [(ngModel)]="operande1" />
+  </div>
+  <div class="col-md">
+    Op.2
+    <input type="number" class="form-control" placeholder="Saisir un nombre" id="op2" [(ngModel)]="operande2" />
+  </div>
+</div>
+<p>
+
+</p>
+<div class="row">
+  <div class="text-center col-md">
+    <label for="resultOperation"> Résultat </label>
+    <input type="number" class="form-control" disabled="disabled" id="resultOperation" [(ngModel)]="result"/>
+  </div>
+</div>
+<p>
+
+</p>
+<div class="row">
+  <div class="col-md">
+    <button type="button" id="plus" class="btn btn-info btn-block" (click)="plus()"> + </button>
+  </div>
+  <div class="col-md">
+    <button type="button"id="minus" class="btn btn-info btn-block" (click)="minus()"> - </button>
+  </div>
+</div>
+<p>
+
+</p>
+<div class="row">
+  <div class="col-md">
+    <button type="button" id="divide" class="btn btn-info btn-block" (click)="div()"> / </button>
+  </div>
+  <div class="col-md">
+    <button type="button" id="times" class="btn btn-info btn-block" (click)="mult()"> * </button>
+  </div>
+</div>
